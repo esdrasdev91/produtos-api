@@ -1,9 +1,12 @@
 package com.esdrasdev.produtos_api.business.converter;
 
 import com.esdrasdev.produtos_api.dto.ProductsDTO;
+import com.esdrasdev.produtos_api.infrastructure.entities.ProdutoEntity;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDateTime;
 import java.util.List;
+import java.util.UUID;
 
 @Component
 public class ProdutoConverter {
