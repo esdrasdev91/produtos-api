@@ -2,6 +2,7 @@ package com.esdrasdev.produtos_api.business.service;
 
 import com.esdrasdev.produtos_api.business.converter.ProdutoConverter;
 import com.esdrasdev.produtos_api.dto.ProductsDTO;
+import com.esdrasdev.produtos_api.infrastructure.client.FakeApiClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
