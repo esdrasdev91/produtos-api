@@ -2,7 +2,9 @@ package com.esdrasdev.produtos_api.infrastructure.configErros;
 
 import com.esdrasdev.produtos_api.business.service.EmailService;
 import lombok.RequiredArgsConstructor;
+import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -12,7 +14,7 @@ public class NotificacaoErroAspect {
 
     private final EmailService emailService;
 
-    @Pointcut("@within(com.javanautas.fakeapius.infrastructure.configs.error.NotificacaoErro) || @annotation(com.javanautas.fakeapius.infrastructure.configs.error.NotificacaoErro)")
+    @Pointcut("@within(com.esdrasdev.produtos_api.infrastructure.configErros.NotificacaoErro) || @annotation(com.esdrasdev.produtos_api.infrastructure.configErros.NotificacaoErro)")
     public void notificacaoErroPointCut() {}
 
     @AfterThrowing(pointcut = "notificacaoErroPointCut()", throwing = "e")
