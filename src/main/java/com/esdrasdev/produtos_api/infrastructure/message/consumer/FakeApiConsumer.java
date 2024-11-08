@@ -2,6 +2,7 @@ package com.esdrasdev.produtos_api.infrastructure.message.consumer;
 
 import com.esdrasdev.produtos_api.business.service.ProdutoService;
 import com.esdrasdev.produtos_api.dto.ProductsDTO;
+import com.esdrasdev.produtos_api.infrastructure.exceptions.BusinessException;
 import lombok.AllArgsConstructor;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;

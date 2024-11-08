@@ -4,6 +4,7 @@ import com.esdrasdev.produtos_api.business.converter.ProdutoConverter;
 import com.esdrasdev.produtos_api.dto.ProductsDTO;
 import com.esdrasdev.produtos_api.infrastructure.configErros.NotificacaoErro;
 import com.esdrasdev.produtos_api.infrastructure.entities.ProdutoEntity;
+import com.esdrasdev.produtos_api.infrastructure.exceptions.BusinessException;
 import com.esdrasdev.produtos_api.infrastructure.repositories.ProdutoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
