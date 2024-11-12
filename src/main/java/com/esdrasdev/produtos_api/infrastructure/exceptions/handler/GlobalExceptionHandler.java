@@ -1,6 +1,8 @@
 package com.esdrasdev.produtos_api.infrastructure.exceptions.handler;
 
 import com.esdrasdev.produtos_api.infrastructure.exceptions.BusinessException;
+import com.esdrasdev.produtos_api.infrastructure.exceptions.ConflictException;
+import com.esdrasdev.produtos_api.infrastructure.exceptions.UnprocessableEntityException;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
