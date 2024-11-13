@@ -1,5 +1,8 @@
 package com.esdrasdev.produtos_api.business.service;
 
+import jakarta.mail.internet.AddressException;
+import jakarta.mail.internet.InternetAddress;
+import jakarta.mail.internet.MimeMessage;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -35,6 +38,10 @@ public class EmailService {
             javaMailSender.send(message);
         } catch (MessagingException ex) {
             ex.printStackTrace();
+        } catch (AddressException ex) {
+            throw new RuntimeException(ex);
+        } catch (jakarta.mail.MessagingException ex) {
+            throw new RuntimeException(ex);
         }
     }
 

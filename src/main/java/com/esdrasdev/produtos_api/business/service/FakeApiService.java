@@ -4,6 +4,8 @@ import com.esdrasdev.produtos_api.business.converter.ProdutoConverter;
 import com.esdrasdev.produtos_api.dto.ProductsDTO;
 import com.esdrasdev.produtos_api.infrastructure.client.FakeApiClient;
 import com.esdrasdev.produtos_api.infrastructure.configErros.NotificacaoErro;
+import com.esdrasdev.produtos_api.infrastructure.exceptions.BusinessException;
+import com.esdrasdev.produtos_api.infrastructure.exceptions.ConflictException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
